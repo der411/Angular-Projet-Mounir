@@ -14,30 +14,42 @@ export class AppComponent {
   produits: Produit[] = [
     {
       id: 1,
-      titre: 'Produit 1',
+      titre: 'Perruche',
       description: 'Description 1',
-      prix: 100,
+      prix: 359.99,
       image: '../assets/images/img1.jpg',
     },
     {
       id: 2,
-      titre: 'Produit 2',
+      titre: 'Renard',
       description: 'Description 2',
-      prix: 200,
+      prix: 1245.75,
       image: '../assets/images/img2.jpg',
     },
     {
       id: 3,
-      titre: 'Produit 3',
+      titre: 'Lézard',
       description: 'Description 3',
-      prix: 300,
+      prix: 299.99,
       image: '../assets/images/img3.jpg',
     },
   ];
 
   categories: Category[] = [
-    new Category(1, 'Categorie 1', 'url_to_categorie_image_1'),
-    new Category(2, 'Categorie 2', 'url_to_categorie_image_2'),
-    // Ajoutez plus de catégories ici
+    {
+      id:1,
+      nom: "Oiseaux",
+      image: '../assets/images/Oiseaux.jpg'
+    },
+    {
+      id:2,
+      nom: "Mammifères",
+      image: '../assets/images/Mammifères.jpg'
+    },
+    {
+      id:3,
+      nom: "Reptiles",
+      image: '../assets/images/Reptiles.jpg'
+    }
   ];
 }
