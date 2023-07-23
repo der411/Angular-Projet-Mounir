@@ -1,0 +1,39 @@
+<!-- Question 1 -->
+<!-- <table>
+    <tr>
+    <th>ID</th>
+    <th>Titre</th>
+    <th>Description</th>
+    <th>Prix</th>
+    <th>Image</th>
+  </tr> -->
+
+<!-- <tr *ngFor="let produit of produits">
+    <td>{{ produit.id }}</td>
+    <td>{{ produit.titre }}</td>
+    <td>{{ produit.description }}</td>
+    <td>{{ produit.prix }}</td>
+    <td><img [src]="produit.image" alt="{{ produit.titre }}" height="50" /></td>
+  </tr> -->
+
+<!-- Question 2 -->
+<!-- <div *ngFor="let produit of produits">
+    <app-cell [produit]="produit"></app-cell>
+  </div>
+</table> -->
+
+<!-- Question 3 -->
+
+<div class="container">
+  <div class="left-side">
+    <div *ngFor="let categorie of categories">
+      <app-category [categorie]="categorie"></app-category>
+    </div>
+  </div>
+
+  <div class="right-side">
+    <div *ngFor="let produit of produits">
+      <app-cell [produit]="produit"></app-cell>
+    </div>
+  </div>
+</div>
